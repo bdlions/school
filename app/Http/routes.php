@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+//Route::get('home', function () {
+//    return view('student');
+//});
+
+Route::get('teacher', 'TeacherController@get');
+Route::get('student', 'SetudentController@get');
