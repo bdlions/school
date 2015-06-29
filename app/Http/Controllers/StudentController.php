@@ -7,7 +7,7 @@ use App\Webservice\Curl;
 use App\Http\Controllers\Controller as BaseController;
 
  
-class TeacherController extends BaseController{
+class StudentController extends BaseController{
     protected $curl;
     protected $service_name;
     
