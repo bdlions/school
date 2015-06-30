@@ -1,21 +1,25 @@
-angular.module('user', []).controller('student', function ($scope) {
-    $scope.list = [];
-    $scope.teachers = [];
-    $scope.text = 'Put students name here';
-    $scope.names = [
-        {name: 'student1', country: 'Bangladesh'},
-        {name: 'student2', country: 'India'},
-        {name: 'student3', country: 'Pakistan'}
-    ];
+angular.module('user', []).controller('student', function ($scope, simpleFactory) {
+    $scope.students = [];
     
-    $scope.submit = function () {
-        if ($scope.text) {
-            $scope.list.push(this.text);
-            $scope.text = '';
-        }
+//    $scope.submitStudentInfo = simpleFactory.postStudentInfo($scope.student);
+    $scope.student = {};
+    $scope.submitStudentInfo = function () {
+//        var studentInfo = JSON.stringify($scope.student);
+//        $http.post("http://localhost/school/public/add_student", studentInfo);
+          simpleFactory.postStudentInfo($scope.student);
     };
-    $scope.userInit = function(t){
-        $scope.teachers = t;
-        console.log(t);
+    $scope.setStudents = function(t){
+        $scope.students = JSON.parse(t);
     };
-});
+}).factory('simpleFactory',['$http',function ($http) {
+
+    var factory = {};
+    factory.postStudentInfo = function (student) {
+        $http.post('add_student', {
+           studentInfo: student
+        }).success(function(data, status, headers, config) {
+             console.log(data);
+        });
+    };
+    return factory;
+}]);

@@ -20,3 +20,4 @@ Route::get('/', function () {
 
 Route::get('teacher', 'TeacherController@get');
 Route::get('student', 'StudentController@get');
+Route::any('add_student', 'StudentController@add');
