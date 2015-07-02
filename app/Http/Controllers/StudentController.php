@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 //imported classess
 use App\Webservice\Curl;
 use Illuminate\Http\Request;
-use Illuminate\Http\Input;
 use App\Http\Controllers\Controller as BaseController;
 
  
