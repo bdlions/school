@@ -1,3 +1,4 @@
 angular.module("app.Student", [
-    'controllers.Student'
+    'controllers.Student',
+    'ui.bootstrap'
 ]);
