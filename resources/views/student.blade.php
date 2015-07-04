@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="app.Student">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Students</title>
         <script type="text/javascript" src="{{ URL::asset('resources/js/angular.js') }}"></script>
-        <script type="text/javascript" src="{{ URL::asset('resources/js/user.js') }}"></script>
+        <script type="text/javascript" src="{{ URL::asset('resources/js/controllers/studentController.js') }}"></script>
+        <script type="text/javascript" src="{{ URL::asset('resources/js/services/studentService.js') }}"></script>
+        <script type="text/javascript" src="{{ URL::asset('resources/js/app/studentApp.js') }}"></script>
     </head>
-    <body ng-app="user">
+    <body>
        
-        <div ng-app="user" ng-controller="student" ng-init="setStudents(<?php echo htmlspecialchars(json_encode($result)); ?>)" >
+        <div ng-controller="studentController" ng-init="setStudents(<?php echo htmlspecialchars(json_encode($result)); ?>)" >
             <ul>
                 <li ng-repeat="student in students">
                     @{{ student.firstName + ', ' + student.lastName}}

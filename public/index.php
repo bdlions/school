@@ -56,18 +56,3 @@ $response = $kernel->handle(
 $response->send();
 
 $kernel->terminate($request, $response);
-
-//use App\User;
-//$user = new App\User();
-//
-//
-//var_dump($user->xyz);
-
-
-//use App\Webservice\Curl;
-//
-//$curl = new Curl();
-////$curl->create("http://bditltd.net:8080/IDBService/teacherservice/getallteachers")->post();
-//$curl->post("http://bditltd.net:8080/IDBService/teacherservice/getallteachers");
-//var_dump(json_decode($curl->response));
-
