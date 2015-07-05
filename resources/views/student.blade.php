@@ -79,11 +79,11 @@
 
                 </form>
 
-                <div class="col-sm-2">
+                <div class="col-sm-2 tet">
                     <b>All students are:</b>
                     <ul class="list-unstyled">
                         <li ng-repeat="student in students">
-                            @{{ student.firstName + ', ' + student.lastName}}
+                            @{{ student.firstName + ', ' + student.lastName +', '+ student.guardianName +', '+student.fatherName +', '+student.mother}}
                         </li>
                     </ul>
                 </div>
