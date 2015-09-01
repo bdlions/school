@@ -1,0 +1,86 @@
+/*!
+Author: A.K.M. NAZMUL ISLAM
+Theme Name: Schoolloop
+version: 1.0
+*/
+
+/* -------------------- Student Info ---------------------------*/
+
+.fontic{
+    color: #333;
+}
+.display_hidden{
+    display: none;
+}
+/*student info table*/
+.student_info_table_title{
+    color: #337AB7;
+}
+.student_info_glyphicon{
+    color: #337AB7;
+    font-weight: bold !important;
+    font-size: 40px;
+}
+.student_info_table_header td{
+    font-weight: bold;
+    font-size: 13px;
+    color: #955CCE;
+    text-align: center;
+}
+.student_info_row_hover{
+    text-align: center;
+}
+.student_info_row_hover:hover{
+    background-color: lavender;
+}
+.student_info_holder{
+    cursor: pointer;
+}
+
+/*Student Information Details Modal*/
+.details_modal_title{
+    color: #955CCE;
+}
+.student_info_details_modal_footer_btn{
+    background-color: orange !important;
+    border-radius: 0 !important;
+}
+.student_info_details_modal_label{
+    color: #314F85;
+}
+
+/*Student Information Update Modal*/
+.student_info_update_modal_title{
+    color: #955CCE;
+}
+.student_info_update_modal_footer_btn{
+    background-color: orange!important;
+    border-radius: 0!important;
+}
+.student_info_update_modal_input_title{
+    font-weight: bold;
+    font-size: 13px;
+    color: #314F85;
+    vertical-align: middle;
+}
+.student_info_update_modal_input{
+    border-radius: 0!important;
+    height: 30px!important;
+}
+.student_info_update_modal_textarea{
+    resize: none;
+    text-align: justify;
+}
+
+/*Student Information Mark Sheet Modal*/
+.student_info_marks_edit_title{
+    font-weight: bold;
+    font-size: 13px;
+    color: #314F85;
+    vertical-align: bottom;
+}
+
+
+
+
+

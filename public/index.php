@@ -1,5 +1,6 @@
 <?php
-define("SERVICE_PATH", "http://bditltd.net:8080/IDBService/");
+//define("SERVICE_PATH", "http://bditltd.net:8080/IDBService/");
+define("SERVICE_PATH", "http://localhost:8080/IDBService/");
 /**
  * Laravel - A PHP Framework For Web Artisans
  *

@@ -5,7 +5,6 @@ angular.module('services.Student', []).
         studentService.getStudents = function(){
             console.log("getStudents");
         };
-
         studentService.getStudentById = function(){
             console.log("dsjfksdf");
         };
